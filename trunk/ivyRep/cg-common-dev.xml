@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="cg"
+		module="common"
+		revision="working@www"
+		conf="dev"
+		confs="dev"
+		date="20110125212413"/>
+	<dependencies>
+	</dependencies>
+</ivy-report>

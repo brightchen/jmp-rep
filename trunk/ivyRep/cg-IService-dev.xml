@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="cg"
+		module="IService"
+		revision="working@www"
+		conf="dev"
+		confs="dev"
+		date="20110125211749"/>
+	<dependencies>
+		<module organisation="net.java.dev.glassfish" name="glassfish-persistence-api">
+			<revision name="b32g" status="release" pubdate="20060407135241" resolver="maven2" artresolver="maven2" homepage="" downloaded="true" searched="true" default="false" conf="system, default, optional, compile, *, provided, runtime, javadoc, sources, master" position="0">
+				<metadata-artifact status="successful" details="" size="1045" time="1687" location="c:\dev\ivyRep\net.java.dev.glassfish\glassfish-persistence-api\ivy-b32g.xml" searched="true" original-local-location="c:\dev\ivyRep\net.java.dev.glassfish\glassfish-persistence-api\ivy-b32g.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/java/dev/glassfish/glassfish-persistence-api/b32g/glassfish-persistence-api-b32g.pom"/>
+				<caller organisation="cg" name="IService" conf="dev" rev="b32g" rev-constraint-default="b32g" rev-constraint-dynamic="b32g" callerrev="working@www"/>
+				<artifacts>
+					<artifact name="glassfish-persistence-api" type="source" ext="jar" extra-classifier="sources" status="successful" details="" size="81339" time="1578" location="c:\dev\ivyRep\net.java.dev.glassfish\glassfish-persistence-api\sources\glassfish-persistence-api-b32g-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/java/dev/glassfish/glassfish-persistence-api/b32g/glassfish-persistence-api-b32g-sources.jar"/>
+					</artifact>
+					<artifact name="glassfish-persistence-api" type="jar" ext="jar" status="successful" details="" size="50224" time="1969" location="c:\dev\ivyRep\net.java.dev.glassfish\glassfish-persistence-api\jars\glassfish-persistence-api-b32g.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/java/dev/glassfish/glassfish-persistence-api/b32g/glassfish-persistence-api-b32g.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

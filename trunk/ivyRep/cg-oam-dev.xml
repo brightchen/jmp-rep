@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="cg"
+		module="oam"
+		revision="3.00.00."
+		conf="dev"
+		confs="dev"
+		date="20110125212413"/>
+	<dependencies>
+		<module organisation="aopalliance" name="aopalliance">
+			<revision name="1.0" status="release" pubdate="20070226174340" resolver="maven2" artresolver="maven2" homepage="http://aopalliance.sourceforge.net" downloaded="true" searched="true" default="false" conf="system, default, optional, compile, *, provided, runtime, javadoc, sources, master" position="4">
+				<license name="Public Domain"/>
+				<metadata-artifact status="successful" details="" size="363" time="1844" location="c:\dev\ivyRep\aopalliance\aopalliance\ivy-1.0.xml" searched="true" original-local-location="c:\dev\ivyRep\aopalliance\aopalliance\ivy-1.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
+				<caller organisation="cg" name="oam" conf="dev" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="3.00.00."/>
+				<artifacts>
+					<artifact name="aopalliance" type="jar" ext="jar" status="successful" details="" size="4467" time="1812" location="c:\dev\ivyRep\aopalliance\aopalliance\jars\aopalliance-1.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+					</artifact>
+					<artifact name="aopalliance" type="source" ext="jar" extra-classifier="sources" status="successful" details="" size="21188" time="1984" location="c:\dev\ivyRep\aopalliance\aopalliance\sources\aopalliance-1.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="jsp-api">
+			<revision name="2.0" status="release" pubdate="20051108165812" resolver="maven2" artresolver="maven2" homepage="" downloaded="true" searched="true" default="false" conf="system, default, optional, compile, *, provided, runtime, javadoc, sources, master" position="2">
+				<metadata-artifact status="successful" details="" size="362" time="1843" location="c:\dev\ivyRep\javax.servlet\jsp-api\ivy-2.0.xml" searched="true" original-local-location="c:\dev\ivyRep\javax.servlet\jsp-api\ivy-2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/servlet/jsp-api/2.0/jsp-api-2.0.pom"/>
+				<caller organisation="cg" name="oam" conf="dev" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="3.00.00."/>
+				<artifacts>
+					<artifact name="jsp-api" type="jar" ext="jar" status="successful" details="" size="50493" time="2234" location="c:\dev\ivyRep\javax.servlet\jsp-api\jars\jsp-api-2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/servlet/jsp-api/2.0/jsp-api-2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="servlet-api">
+			<revision name="2.4" status="release" pubdate="20051108165835" resolver="maven2" artresolver="maven2" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="3">
+				<metadata-artifact status="successful" details="" size="156" time="1843" location="c:\dev\ivyRep\javax.servlet\servlet-api\ivy-2.4.xml" searched="true" original-local-location="c:\dev\ivyRep\javax.servlet\servlet-api\ivy-2.4.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.4/servlet-api-2.4.pom"/>
+				<caller organisation="javax.servlet" name="jsp-api" conf="default, compile, runtime, master" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="2.0"/>
+				<artifacts>
+					<artifact name="servlet-api" type="jar" ext="jar" status="successful" details="" size="97693" time="2453" location="c:\dev\ivyRep\javax.servlet\servlet-api\jars\servlet-api-2.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.8.1" status="release" pubdate="20100225072158" resolver="maven2" artresolver="maven2" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="system, default, optional, compile, *, provided, runtime, javadoc, sources, master" position="1">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="successful" details="" size="949" time="1781" location="c:\dev\ivyRep\junit\junit\ivy-4.8.1.xml" searched="true" original-local-location="c:\dev\ivyRep\junit\junit\ivy-4.8.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.pom"/>
+				<caller organisation="cg" name="oam" conf="dev" rev="4.8.1" rev-constraint-default="4.8.1" rev-constraint-dynamic="4.8.1" callerrev="3.00.00."/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="237047" time="4281" location="c:\dev\ivyRep\junit\junit\jars\junit-4.8.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar"/>
+					</artifact>
+					<artifact name="junit" type="source" ext="jar" extra-classifier="sources" status="successful" details="" size="130755" time="2562" location="c:\dev\ivyRep\junit\junit\sources\junit-4.8.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="log4j" name="log4j">
+			<revision name="1.2.14" status="release" pubdate="20061201012721" resolver="maven2" artresolver="maven2" homepage="http://logging.apache.org/log4j/docs/" downloaded="true" searched="true" default="false" conf="system, default, optional, compile, *, provided, runtime, javadoc, sources, master" position="0">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2374" time="1843" location="c:\dev\ivyRep\log4j\log4j\ivy-1.2.14.xml" searched="true" original-local-location="c:\dev\ivyRep\log4j\log4j\ivy-1.2.14.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.pom"/>
+				<caller organisation="cg" name="oam" conf="dev" rev="1.2.14" rev-constraint-default="1.2.14" rev-constraint-dynamic="1.2.14" callerrev="3.00.00."/>
+				<artifacts>
+					<artifact name="log4j" type="source" ext="jar" extra-classifier="sources" status="successful" details="" size="343300" time="3155" location="c:\dev\ivyRep\log4j\log4j\sources\log4j-1.2.14-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14-sources.jar"/>
+					</artifact>
+					<artifact name="log4j" type="jar" ext="jar" status="successful" details="" size="367444" time="3875" location="c:\dev\ivyRep\log4j\log4j\jars\log4j-1.2.14.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
