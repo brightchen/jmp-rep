@@ -1,0 +1,9 @@
+<ivy-module version="1.0" xmlns:e="http://ant.apache.org/ivy/extra" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="cg" module="common" revision="working@www" status="integration" publication="20110115124138"/>
+  <configurations>
+    <conf name="dev" description="Includes the libraries/sources/docs required to build/test/debug this module."/>
+  </configurations>
+   
+  <dependencies>
+  </dependencies>
+</ivy-module>

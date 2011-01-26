@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="1.0" xmlns:e="http://ant.apache.org/ivy/extra" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="cg" module="frameworka" revision="3.00.00." status="integration" publication="20110122000636"/>
+  <configurations>
+    <conf name="dev" description="Includes the libraries/sources/docs required to build/test/debug this module."/>
+  </configurations>
+  <publications>
+  </publications>
+  <dependencies>
+    <dependency org="log4j" name="log4j" rev="1.2.14"/>
+    <dependency org="junit" name="junit" rev="4.8.1"/>
+    <dependency org="javax.servlet" name="jsp-api" rev="2.0"/>
+
+    <dependency org="aopalliance" name="aopalliance" rev="1.0"/>
+  </dependencies>
+</ivy-module>

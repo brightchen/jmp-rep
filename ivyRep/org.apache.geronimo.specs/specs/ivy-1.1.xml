@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.geronimo.specs"
+		module="specs"
+		revision="1.1"
+		status="release"
+		publication="20060628051933"
+	>
+		<description homepage="http://geronimo.apache.org">
+		Geronimo SPECs is a collection of Java Specifications that have been
+        created completely by hand and are ASF licensed.
+		</description>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-jacc_1.0_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-jacc_1.0_spec__version>
+		<m:properties__geronimoSpecsCorba30Version>1.1</m:properties__geronimoSpecsCorba30Version>
+		<m:properties__geronimoSpecsVersion>1.1</m:properties__geronimoSpecsVersion>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jaxr_1.0_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jaxr_1.0_spec__version>
+		<m:properties__geronimoSpecsQnameVersion>1.0.1</m:properties__geronimoSpecsQnameVersion>
+		<m:properties__geronimoSpecsServletVersion>1.0.1</m:properties__geronimoSpecsServletVersion>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jta_1.0.1B_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jta_1.0.1B_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-corba_3.0_spec__version>1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-corba_3.0_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-activation_1.0.2_spec__version>1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-activation_1.0.2_spec__version>
+		<m:dependency.management__mockobjects__mockobjects-jdk1.4-j2ee1.3__version>0.09</m:dependency.management__mockobjects__mockobjects-jdk1.4-j2ee1.3__version>
+		<m:properties__geronimoSpecsJmsVersion>1.0.1</m:properties__geronimoSpecsJmsVersion>
+		<m:properties__geronimoSpecsCorba23Version>1.1</m:properties__geronimoSpecsCorba23Version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-qname_1.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-qname_1.1_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-saaj_1.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-saaj_1.1_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-deployment_1.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-deployment_1.1_spec__version>
+		<m:dependency.management__mx4j__mx4j__version>3.0.1</m:dependency.management__mx4j__mx4j__version>
+		<m:properties__geronimoSpecsJavamailVersion>1.1</m:properties__geronimoSpecsJavamailVersion>
+		<m:properties__geronimoSpecsJ2eeDeploymentVersion>1.0.1</m:properties__geronimoSpecsJ2eeDeploymentVersion>
+		<m:properties__geronimoSpecsCommonjVersion>1.0</m:properties__geronimoSpecsCommonjVersion>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-corba_2.3_spec__version>1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-corba_2.3_spec__version>
+		<m:dependency.management__scout__scout__version>0.5</m:dependency.management__scout__scout__version>
+		<m:maven.plugins>null__maven-compiler-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jms_1.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jms_1.1_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-management_1.0_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-management_1.0_spec__version>
+		<m:properties__geronimoSpecsJaxrpcVersion>1.0.1</m:properties__geronimoSpecsJaxrpcVersion>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-servlet_2.4_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-servlet_2.4_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-javamail_1.3.1_spec__version>1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-javamail_1.3.1_spec__version>
+		<m:properties__geronimoSpecsJspVersion>1.0.1</m:properties__geronimoSpecsJspVersion>
+		<m:properties__geronimoSpecsActivationVersion>1.1</m:properties__geronimoSpecsActivationVersion>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-ejb_2.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-ejb_2.1_spec__version>
+		<m:properties__geronimoSpecsJ2eeConnectorVersion>1.0.1</m:properties__geronimoSpecsJ2eeConnectorVersion>
+		<m:properties__geronimoSpecsSaajVersion>1.0.1</m:properties__geronimoSpecsSaajVersion>
+		<m:properties__geronimoSpecsJaxrVersion>1.0.1</m:properties__geronimoSpecsJaxrVersion>
+		<m:properties__geronimoSpecsCorbaVersion>1.0</m:properties__geronimoSpecsCorbaVersion>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jsp_2.0_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jsp_2.0_spec__version>
+		<m:properties__geronimoSpecsJ2eeManagementVersion>1.0.1</m:properties__geronimoSpecsJ2eeManagementVersion>
+		<m:dependency.management__mockobjects__mockobjects-core__version>0.09</m:dependency.management__mockobjects__mockobjects-core__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jaxrpc_1.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jaxrpc_1.1_spec__version>
+		<m:properties__geronimoSpecsJ2eeJaccVersion>1.0.1</m:properties__geronimoSpecsJ2eeJaccVersion>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee_1.4_spec__version>1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee_1.4_spec__version>
+		<m:properties__geronimoSpecsJtaVersion>1.0.1</m:properties__geronimoSpecsJtaVersion>
+		<m:properties__geronimoSpecsEjbVersion>1.0.1</m:properties__geronimoSpecsEjbVersion>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-commonj_1.1_spec__version>1.0</m:dependency.management__org.apache.geronimo.specs__geronimo-commonj_1.1_spec__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="junit" name="junit" rev="3.8.1" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-activation_1.0.2_spec" matcher="exact" rev="1.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-commonj_1.1_spec" matcher="exact" rev="1.0"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-corba_3.0_spec" matcher="exact" rev="1.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-corba_2.3_spec" matcher="exact" rev="1.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-ejb_2.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee_1.4_spec" matcher="exact" rev="1.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-connector_1.5_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-deployment_1.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-jacc_1.0_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-management_1.0_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-javamail_1.3.1_spec" matcher="exact" rev="1.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jaxr_1.0_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jaxrpc_1.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jsp_2.0_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jms_1.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jta_1.0.1B_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-qname_1.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-saaj_1.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-servlet_2.4_spec" matcher="exact" rev="1.0.1"/>
+		<override org="mx4j" module="mx4j" matcher="exact" rev="3.0.1"/>
+		<override org="mockobjects" module="mockobjects-jdk1.4-j2ee1.3" matcher="exact" rev="0.09"/>
+		<override org="mockobjects" module="mockobjects-core" matcher="exact" rev="0.09"/>
+		<override org="scout" module="scout" matcher="exact" rev="0.5"/>
+	</dependencies>
+</ivy-module>

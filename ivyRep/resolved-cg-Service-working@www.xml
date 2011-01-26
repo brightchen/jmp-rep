@@ -1,0 +1,11 @@
+<ivy-module version="1.0" xmlns:e="http://ant.apache.org/ivy/extra" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="cg" module="Service" revision="working@www" status="integration" publication="20110115124121"/>
+  <configurations>
+    <conf name="dev" description="Includes the libraries/sources/docs required to build/test/debug this module."/>
+  </configurations>
+   
+  <dependencies>
+    <dependency org="net.java.dev.glassfish" name="glassfish-persistence-api" rev="b32g">
+    </dependency>
+  </dependencies>
+</ivy-module>
