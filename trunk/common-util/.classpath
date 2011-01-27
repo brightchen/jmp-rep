@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="**/*.CVS|CVS/|**/**/.CVS" kind="src" path="src/java/main"/>
-	<classpathentry excluding="**/*.CVS|CVS/" kind="src" path="src/java/test"/>
+	<classpathentry excluding="**/**/.svn|**/*.svn|svn/" kind="src" path="src/java/main"/>
+	<classpathentry excluding="**/*.svn|svn/" kind="src" path="src/java/test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/dev/jarRepo/publishlib-struts2-2.2.1/mail-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/dev/jarRepo/publishlib-struts2-2.2.1/log4j-1.2.14.jar"/>
-	<classpathentry kind="lib" path="C:/dev/jarRepo/publishlib-struts2-2.2.1/commons-email-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/dev/jarRepo/publishlib-struts2-2.2.1/xercesImpl-2.9.1.jar"/>
-	<classpathentry kind="lib" path="C:/dev/jarRepo/publishlib-struts2-2.2.1/junit-4.8.1.jar"/>
-	<classpathentry kind="output" path="target/classes"/>
+	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?ivyXmlPath=build%2Fivy.xml&amp;confs=*"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
