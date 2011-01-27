@@ -2,27 +2,25 @@
 <ivy-module version="1.0" xmlns:e="http://ant.apache.org/ivy/extra" xmlns:m="http://ant.apache.org/ivy/maven">
   <info organisation="cg" module="frameworka" status="integration" revision="0.01.00."></info>
   <configurations>
-    <include file="common/ivy-configurations.xml"/>
-    <conf name="patch" description="Includes the patched jars that are required to be put ahead of other jars in the classpath."/>
-    <conf name="patchjboss" extends="patch" description="Includes the patched jars that are required to be put ahead of other jars in the JBoss (EAR) classpath."/>
-    <conf name="patchtomcat" extends="patch" description="Includes the patched jars that are required to be put ahead of other jars in the Tomcat classpath."/>
+    <conf name="jee2" description="use servlet2.x, ejb2.x, hibernate2.x, spring2.x"/>
+    <conf name="jee3" description="use servlet3.x, ejb3.x, hibernate3.x, spring3.x"/>
   </configurations>
   <publications>
   </publications>
   <dependencies>
-    <dependency org="log4j" name="log4j" rev="1.2.14" conf="devclient->*; buildclient->default"/>
-    <dependency org="junit" name="junit" rev="4.8.1" conf="devclient->*; build->default"/>
-    <dependency org="javax.servlet" name="jsp-api" rev="2.0" conf="devclient->*; build->default"/>
-    <dependency org="javax.servlet" name="servlet-api" rev="2.2" conf="devclient->*; build->default"/>
+    <dependency org="log4j" name="log4j" rev="1.2.14" conf="*"/>
+    <dependency org="junit" name="junit" rev="4.8.1" conf="*"/>
+    <dependency org="javax.servlet" name="jsp-api" rev="2.0" conf="jee2->*"/>
+    <dependency org="javax.servlet" name="servlet-api" rev="2.2" conf="jee2->*"/>
 
-	<dependency org="springframework" name="spring-hibernate" rev="1.2.6" conf="devclient->*; build->default"/>
+	<dependency org="springframework" name="spring-hibernate" rev="1.2.6" conf="jee2->*"/>
 
-<!-- duplicate with struts-2.0.14 
-    <dependency org="springframework" name="spring-core" rev="1.2.6" conf="devclient->*; build->default"/>
-    <dependency org="springframework" name="spring-context" rev="1.2.6" conf="devclient->*; build->default"/>
-    <dependency org="springframework" name="spring-beans" rev="1.2.6" conf="devclient->*; build->default"/>
--->
+	<dependency org="org.springframework" name="spring-core" rev="2.5.6" conf="jee2->*"/>
+	<dependency org="org.springframework" name="spring-web" rev="2.5.6" conf="jee2->*"/>
+    <dependency org="org.springframework" name="spring-orm" rev="2.5.6" conf="jee2->*"/>
     
+    <dependency org="org.hibernate" name="hibernate-core" rev="3.6.0.Final" />
+    <dependency org="org.hibernate" name="hibernate-entitymanager" rev="3.6.0.Final" />
 <!-- error 
     <dependency org="springframework" name="spring-web" rev="1.2.6" conf="devclient->*; build->default"/>
     <dependency org="springframework" name="spring-webmvc" rev="1.2.6" conf="devclient->*; build->default"/>
@@ -31,9 +29,9 @@
     <dependency org="wurfl" name="wall-tomcat5" rev="b1" conf="devclient->*; build->default"/>
 -->
 
-    <dependency org="commons-fileupload" name="commons-fileupload" rev="1.2.1" conf="devclient->*; build->default"/>
-    <dependency org="commons-net" name="commons-net" rev="2.0" conf="devclient->*; build->default"/>
-    <dependency org="org.apache.derby" name="derby" rev="10.7.1.1" conf="devclient->*; build->default"/>
+    <dependency org="commons-fileupload" name="commons-fileupload" rev="1.2.1"/>
+    <dependency org="commons-net" name="commons-net" rev="2.0"/>
+    <dependency org="org.apache.derby" name="derby" rev="10.7.1.1"/>
 
 <!-- duplicate with struts-2.0.14 
     <dependency org="commons-beanutils" name="commons-beanutils" rev="1.8.0" conf="devclient->*; build->default"/>
@@ -42,12 +40,12 @@
     <dependency org="commons-logging" name="commons-logging" rev="1.0.2" conf="devclient->*; build->default"/>
 -->
     
-    <dependency org="displaytag" name="displaytag" rev="1.2" conf="devclient->*; build->default"/>
+    <dependency org="displaytag" name="displaytag" rev="1.2"/>
 
-    <dependency org="org.hibernate" name="hibernate-entitymanager" rev="3.4.0.GA" conf="devclient->*; build->default"/>
-    <dependency org="org.hibernate" name="ejb3-persistence" rev="1.0.2.GA" conf="devclient->*; buildclient->default; distclient->default"/>
-    <dependency org="org.hibernate" name="hibernate-commons-annotations" rev="3.1.0.GA" conf="devclient->*; buildclient->default"/>
-    <dependency org="org.hibernate" name="hibernate-annotations" rev="3.4.0.GA" conf="devclient->*; buildclient->default"/>
+    <dependency org="org.hibernate" name="hibernate-entitymanager" rev="3.4.0.GA"/>
+    <dependency org="org.hibernate" name="ejb3-persistence" rev="1.0.2.GA"/>
+    <dependency org="org.hibernate" name="hibernate-commons-annotations" rev="3.1.0.GA"/>
+    <dependency org="org.hibernate" name="hibernate-annotations" rev="3.4.0.GA"/>
 
 <!-- 
     <dependency org="org.slf4j" name="slf4j-api" rev="1.4.2" conf="devclient->*; build->default"/>
