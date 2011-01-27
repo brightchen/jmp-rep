@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
+    <bean id="loginAction" class="cg.publish.web.action.LoginAction" scope="prototype">
+        <property name="userService" ref="userService"/>
+        <property name="emailService" ref="emailServiceNew"/>
+        <property name="emailTemplateService" ref="emailTemplateService"/>
+    </bean>
+
+    <bean id="userAction" class="cg.publish.web.action.UserAction" scope="prototype">
+        <property name="userService" ref="userService"/>
+        <property name="roleService" ref="roleService"/>
+        <property name="emailService" ref="emailService"/>
+    </bean>
+
+    <bean id="mainMenu" class="cg.publish.web.action.MainMenu" scope="prototype" />
+    
+    <bean id="authoringAction" class="cg.publish.web.action.AuthoringAction" scope="prototype">
+        <property name="userService"       ref="userService"/>
+        <property name="emailService" 		    ref="emailService"/>
+        
+        <property name="defaultPageLayoutFilePath"><value>${ajax.default.layout.filePath}</value></property>
+    </bean>
+
+</beans>

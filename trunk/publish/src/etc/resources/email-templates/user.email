@@ -1,0 +1,21 @@
+<html>
+<body>
+Dear {user.username},<br>
+<br>
+An account is successfully created for you!<br>
+	<br>
+Publisher Name: {publisher.name}<br>
+username: {user.username}<br>
+password: {user.password}<br>
+
+<br>
+Click <a href="{iseepublish_server_link}">here</a> to login to isee publish portal. Once logged in, be sure to change your password.
+<br><br>
+This is an automated notification system. Please do not reply to this email.<br>
+ <br>
+Thank you.<br>
+ <br>
+Regards,<br>
+iseepublish team<br>
+</body>
+</html>

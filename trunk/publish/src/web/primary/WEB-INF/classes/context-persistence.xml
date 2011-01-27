@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: context-persistence.xml,v 1.16 2008/06/03 15:21:59 brightc Exp $ -->
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"> 
+
+	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+	
+	<bean id="roleDAO" class="cg.publish.dao.jpa.RoleJpaDAO" />
+
+	<bean id="userDAO" class="cg.publish.dao.jpa.UserJpaDAO" />
+	
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <!--  <property name="database" value="ORACLE" />  -->
+                <property name="database" value="DEFAULT" />
+                <property name="showSql" value="true" />
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+            <property name="driverClassName"><value>org.apache.derby.jdbc.EmbeddedDriver</value></property>
+            <property name="url"><value>jdbc:derby:testdb;create=true</value></property>
+            <property name="username"><value>user1</value></property>
+            <property name="password"><value>user1</value></property>
+            <property name="validationQuery"><value></value></property>
+            <!-- 
+            <property name="driverClassName"><value>${db.jdbc.driver_class}</value></property>
+            <property name="url"><value>${db.jdbc.url}</value></property>
+            <property name="username"><value>${db.username}</value></property>
+            <property name="password"><value>${db.password}</value></property>
+            <property name="validationQuery"><value>${db.validation.query}</value></property>
+             -->
+            <property name="maxActive"><value>150</value></property>
+            <property name="maxIdle"><value>50</value></property>
+            <property name="maxWait"><value>10000</value></property>
+            
+            <property name="defaultAutoCommit"><value>false</value></property>
+            <property name="testOnBorrow"><value>false</value></property>
+            <property name="testWhileIdle"><value>true</value></property>
+            <property name="testOnReturn"><value>false</value></property>
+            <property name="timeBetweenEvictionRunsMillis"><value>60000</value></property>
+            <property name="numTestsPerEvictionRun"><value>10</value></property>
+            <property name="minEvictableIdleTimeMillis"><value>120000</value></property>
+    </bean>
+
+</beans>

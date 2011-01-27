@@ -1,0 +1,355 @@
+/* Standard HTML elements */
+
+body,input,select,td,textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+}
+body {
+
+	margin:0!important;
+	background-color:#fff!important;
+	color:#000!important;
+	
+}
+
+h1 {
+  padding: 5px 5px 5px 6px;
+  border: 1px solid #999;
+  color: #1f4ca5; 
+  background-color: #F2F3ED;
+  /* background-color: #ddd;  grey */
+  font-weight:900;
+  font-size: 22px;
+}
+h2 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #666;
+	background: none;
+	font-weight: normal;
+	padding-left: 0;
+	border: none;
+	border-bottom: 1px dotted #ccc;
+}
+
+.bigtext {
+    font-size: 19pt;
+    font-weight: normal;
+    color: #1f4ca5;
+    font-family: arial;
+}
+
+h3 {
+    font-size: 12pt;
+    margin-bottom: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+big {
+    font-size: 11pt;
+}
+
+/* Error message */
+/* .label {font-style:italic; } */
+.label {  font-style:normal; font-weight:bold; text-align:left;  font-size: 10pt;}
+.errorLabel {font-style:normal; font-weight:bold; text-align:left;  font-size: 10pt; color:red; }
+.errorMessage {font-weight:bold; text-align: left; color:red; }
+.tdLabel {text-align:right; vertical-align:middle;  width: 200px;} 
+.strongText { font-size: 10pt; font-weight:bold; color: #663366;}
+
+/* Grid style table */
+.wwFormTable {
+    border: 1px solid;
+    border-color: buttonshadow;
+    width: 100%;
+}
+.wwFormTable td, .wwFormTable th {
+    padding: 2 6 1 6;
+    font: menu;
+   
+}
+.wwFormTable th {
+    background: buttonface;
+    border: 1px solid;
+    border-color: buttonhighlight buttonshadow buttonshadow buttonhighlight;
+  
+}
+
+.wwFormTableHover {
+	background-color: #f9f9f9;
+	cursor: pointer; cursor: hand; /* use both in this order to keep ie+moz happy */
+}
+
+
+
+/* Grid style table */
+.grid {
+    border: 1px solid;
+    border-color: buttonshadow;
+}
+.grid td, .grid th {
+    padding: 1 6 1 6;
+    font: menu;
+  
+}
+.grid th {
+    background: buttonface;
+    border: 1px solid;
+    border-color: buttonhighlight buttonshadow buttonshadow buttonhighlight;
+}
+.grid input, .grid select {
+    font: menu;
+    padding: 0;
+    margin: 0;
+}
+.gridHover {
+	background-color: #f9f9f9;
+	cursor: pointer; cursor: hand; /* use both in this order to keep ie+moz happy */
+}
+
+
+/* Form style table */
+.form {
+    border: 1px solid;
+    border-color: buttonshadow;
+    background-color: #eeeeee;
+}
+.form td, .form th {
+    vertical-align: top;
+    font: menu;
+    padding: 5;
+}
+.form th {
+	text-align: left;
+	font-weight: bold;
+	background-color: #dddddd; 
+}
+.form .errorRow input {
+    background-color: #ffcccc;
+}
+.form .label {
+	font-weight: bold;
+}
+.form .error {
+    color: red;
+}
+.form input, .form select, .form textarea {
+    font: menu;
+}
+
+/* Navigation */
+.navLink {
+    font-family: arial;
+    font-size: 9pt;
+    color: white;
+    text-decoration: none;
+}
+.navLink a:link{color: white;text-decoration: none}
+.navLink a:visited{color: white;text-decoration: none}
+.navLink a:hover{color: white;text-decoration: underline}
+
+.cell {
+    font-size: 10pt;
+    font-family: arial;
+}
+
+
+a:link{color:#039;}
+a:visited{color:#039;}
+a:hover{color:#f60;}
+
+.nounderline a:link{text-decoration: none}
+.nounderline a:visited{text-decoration: none}
+.nounderline a:hover{text-decoration: underline}
+
+
+
+
+hr{height:1px;}
+.dashed{height:1px; font-size:0; border-bottom:1px dashed #ccc;margin:8px 0;}
+
+/* PHONE LIST STYLES */
+.phoneManufacturers {
+	margin: 15px 0 10px 30px;
+	padding: 0;
+}
+.phoneManufacturers li {
+	list-style: url(none) none;
+	padding: 5px 0;
+	width: 150px;
+	text-align: center;
+	float: left;
+}
+.phoneModel {
+	height: 135px;
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+
+/* registration flow*/
+#joinstatabar span.current{background:url(../images/join_current.gif) right 18px no-repeat; padding-bottom:15px; border-bottom:none;font-weight:bold;color:#f60;}
+#joinstatabar span{border-bottom:4px solid #ccc;padding:3px 5px;margin: 0 2px;color:#777;}
+
+
+/* listTable */
+#listTable th {margin:0;padding:4px;background-color:#f5f5f5;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;border-right: 1px solid #e0e0e0;font-size:10pt;}
+#listTable td {padding:5px 4px;border-bottom:1px solid #e0e0e0;font-size:9pt;}
+.rowcolor{background-color:#fffae2;}
+
+/* form highloght */
+.highlight_box_reg {
+	border: 1px solid #E4E5DF;
+	background: #F2F3ED;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.error {
+	color: #c00;
+}
+
+/* Show bullet Li STYLES */
+.showbullet li {
+	list-style: url(../images/bullet.gif) outside;
+}
+li.noBullet {
+	list-style: none !important;
+}
+
+
+/* BUTTONS */
+.btn {
+	clear: both;
+    background: #ffffff url(../images/btn.gif) repeat-x center top;
+	margin: 10px auto 10px 214px;
+	text-align: center;
+	white-space: nowrap;
+	width: 270px;
+	cursor:pointer;
+	cursor:hand;
+	height: 32px;
+}
+
+.btn2 {
+	clear: both;
+    background: url(../images/btn.gif) repeat-x center top;
+    margin: 10px auto 10px auto;
+	text-align: center;
+	white-space: nowrap;
+	width: 270px;
+	cursor:pointer;
+	cursor:hand;
+	height: 32px;
+}
+
+
+#submitBtn {
+	width: 130px;
+}
+#findAddressBtn {
+	width: 255px;
+}
+.btn .left {
+	background: url(../images/btn_l.gif) no-repeat left top;
+        height: 32px;
+
+}
+.btn .right {
+	background: url(../images/btn_r.gif) no-repeat right top;
+	padding: 1px;
+        height: 32px;
+}
+.btn a {
+	display: block;
+	margin: 5px 55px 0 22px;
+	color: #000;
+	font-weight: bold;
+	font-size: 13px;
+}
+.btn a:link, .btn a:visited {
+	color: #000;
+	text-decoration: none;
+}
+.btn:hover a, .btn a:hover, .btn a:active {
+	color: #39f;
+}
+input.hiddenBtn {
+	display:none;
+    _display:inline;
+	_height:1px;
+	_width:1px;
+}
+input.substituteBtn {
+	clear: both;
+	margin: 10px auto 10px 214px;
+}
+div.footer {
+  color: #8d8d8d;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+.ymc {
+  background-color: #ffffff;
+  text-align:       left;
+  font-size:        9pt;
+  letter-spacing:   0em;
+  border:           1px solid #99cbf0;
+}
+.ymc td {
+  padding: 4px;
+}
+.ymcheader, .ymcsubheader, .ymcnotice, .ymcmessage, .ymcfooter {
+  font-size: 10pt;
+  background-color: #cbe4f7;
+  padding:   5px;
+  vertical-align: bottom;
+}
+.ymcsubheader {
+  font-size: 10pt;
+  font-weight: bold;
+  padding-left: 10px !important;
+  text-align: left;
+  vertical-align: bottom;
+  line-height: 7pt;
+  background-color: #fff;
+}
+.ymcfooter {
+  font-size: 10pt;
+  font-weight: normal;
+  padding:   0px;
+  text-align: left;
+  vertical-align: bottom;
+}
+.ymcfooter a:visited {
+  color: #00f;
+}
+.ymcg, .ymch {
+  padding: 1px 5px 1px 10px !important;
+}
+.ymcg, .ymcg td {
+  background-color: #eeeeee;
+  
+  
+}
+.ymch, .ymch td {
+  background-color: #ffffff;
+  
+}
+.ymch label, .ymcg label {
+  afont-weight: bold;
+}
+.ymcnotice {
+  background-color: #fff1d1;
+}
+span.ymeditlink  {
+  font-size: 7.5pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}

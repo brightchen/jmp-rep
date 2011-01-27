@@ -1,0 +1,22 @@
+<html>
+<body>
+<p>Dear {user.name},</p>
+
+<p>We were unable to process the following document due to errors in file name. The supplied name did not match any publication, edition or a section. Please verify supplied information and take appropriate actions as deemed necessary.</p>
+<p> 
+    Supplied Document Name: {document.name}<br/>
+    Publication Name: {publication.name}<br/>
+    Edition Name: {edition.name}<br/>
+    Section Name: {section.name}<br/>
+</p>
+
+<p>This is an automated notification system. Please do not reply to this email.</p>
+ 
+<p>Thank you.</p>
+ 
+<p>Regards,<br/>
+isee publish team</p>
+
+
+</body>
+</html>

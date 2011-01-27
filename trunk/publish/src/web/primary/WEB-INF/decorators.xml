@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<decorators defaultdir="/decorators">
+    <!-- Any urls that are excluded will never be decorated by Sitemesh -->
+    <excludes>
+      <pattern>/images/</pattern>
+      <pattern>/css/*</pattern>
+      <pattern>/includes/*</pattern>
+      <pattern>/common/*</pattern>        
+      <pattern>/dojo/*</pattern>     
+      <pattern>/login*</pattern>  
+ 
+      <pattern>/authoring/*</pattern>
+      <pattern>/struts/*</pattern>
+      <pattern>/docs/*</pattern>
+      <pattern>/ota/*</pattern>
+      <pattern>/otademo/*</pattern>
+  		<pattern>/provision/*</pattern>
+      <pattern>/MosmsDoPost*</pattern>
+      <pattern>/preview/applet*</pattern>
+      <pattern>/Jasper*</pattern>
+      <pattern>/ClientDownloadReport*</pattern>
+    </excludes>
+
+    <decorator name="main" page="main.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>

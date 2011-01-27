@@ -1,0 +1,31 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+    "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	
+    <field name="phoneNumber">
+         <field-validator type="regex">
+		<param name="expression">		
+			[^a-zA-Z]+[0-9]+[^a-zA-Z]+$
+		</param>
+		  <message key="errors.digits.only" /> 
+	</field-validator>
+    </field>
+     
+   <field name="shortcode">
+        <field-validator type="regex" >
+	 		<param name="expression">
+		 		^[0-9+]+$
+	   		</param>
+	   		  <message key="errors.digits.only" /> 
+   	</field-validator>
+      
+    </field> 
+    
+    <field name="publicationName">
+  	  <field-validator type="requiredstring">
+	            <param name="trim">true</param>
+	            <message key="errors.required"/>
+        </field-validator>
+    </field>
+
+</validators>

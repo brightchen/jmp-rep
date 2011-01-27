@@ -1,0 +1,16 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="ftpConnectionInfos" type="FtpConnectionInfos" />
+
+    <xsd:complexType name="FtpConnectionInfos">
+        <xsd:sequence>
+            <xsd:element name="ftpConnectionInfo" type="FtpConnectionInfo" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="FtpConnectionInfo">
+        <xsd:attribute name="server" type="xsd:string"/>
+        <xsd:attribute name="user" type="xsd:string"/>
+        <xsd:attribute name="password" type="xsd:string"/>
+    </xsd:complexType>
+    
+</xsd:schema>

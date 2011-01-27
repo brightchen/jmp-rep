@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: context-service.xml,v 1.26 2008/08/22 20:56:51 brightc Exp $ -->
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	
+	<bean id="roleService"
+        class="cg.publish.service.RoleServiceImpl">   
+        <property name="roleDAO"><ref bean="roleDAO"/></property> 	    	    
+	</bean>
+	
+	<bean id="userService"
+        class="cg.publish.service.UserServiceImpl">   
+        <property name="userDAO"><ref bean="userDAO"/></property> 	    	    
+	</bean>
+	
+	<!-- 
+	<bean id="ftpUserService" class="cg.publish.service.FtpUserServiceImpl">
+		<property name="ftpUsersFilePath"><value>${ftp.usersFilePath}</value></property>
+		<property name="ftpUsersFilePathNew"><value>${ftp.usersFilePathNew}</value></property>
+	</bean>
+	
+	<bean id="ftpFileService" class="cg.publish.service.FtpFileServiceImpl">
+		<property name="ftpFileInfoMap"><ref bean="ftpFileInfoMap"/></property>
+	</bean>
+	
+	<bean id="emailService"
+        class="cg.common.email.EmailServiceImpl">
+        <property name="emailTemplatePackage"><value>email-templates</value></property>
+        <property name="mailServer"><value>${mail.smtp.host}</value></property>
+        <property name="username"><value>${mail.smtp.username}</value></property>
+        <property name="password"><value>${mail.smtp.password}</value></property>
+        <property name="fromAddress"><value>${mail.from}</value></property>
+        <property name="iseepublishServer"><value>${mail.iseepublish_server}</value></property>
+    </bean>
+    
+    <bean id="emailServiceNew" class="cg.publish.service.EmailServiceImpl">
+        <property name="hostname"><value>${mail.smtp.host}</value></property>
+        <property name="username"><value>${mail.smtp.username}</value></property>
+        <property name="password"><value>${mail.smtp.password}</value></property>
+        <property name="emailFrom"><value>${mail.from}</value></property>
+    </bean>
+    
+    <bean id="emailTemplateService" class="cg.publish.service.EmailTemplateServiceImpl">
+        <property name="emailTemplateDir"><value>${mail.template.dir}</value></property>
+    </bean>
+-->
+	<!-- beans required for ftp -->
+	<!-- 
+    <bean id="ftpConfigService" class="cg.publish.service.FtpConfigServiceImpl">   
+    	<property name="ftpConfigFilePath"> <value>${ftp.ftpConfig}</value> </property>
+	</bean>
+  -->
+
+</beans>

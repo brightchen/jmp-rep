@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<!--
+  "$Header: /cvs/helio/common-util/deps.xml,v 1.5 2008/05/27 18:08:50 sergeyb Exp $"
+-->
+
+<project name="common-util-deps">
+
+  <target name="common-util.init-deps">  
+     <dirname property="common-util-deps.dir" file="${ant.file.common-util-deps}"/>
+     <path id="common-util.deps.normal">
+	  
+      <pathelement location="${JUNIT_JAR}"/>
+      <pathelement location="${LOG4J_JAR}"/> 
+      <pathelement location="${JAVAMAIL_JAR}"/>
+      <pathelement location="${SPRING2_JAR}"/>
+      <pathelement location="${XERCES_JAR}"/>
+      <pathelement location="${SERVLETAPI_JAR}" />
+    </path>
+
+    <path id="common-util.deps.compileonly">   	
+    </path>
+
+    <path id="common-util.deps.testonly">
+      <pathelement location="${EASYMOCK_JAR}"/>
+    </path>
+
+    <path id="common-util.deps.runtimeonly">
+    </path>
+
+    <path id="common-util.deps.webapp.libdir" refid="common-util.deps.normal">
+    </path>
+    
+  </target>
+
+  <target name="init-deps" depends="common-util.init-deps">
+    <path id="deps.normal" refid="common-util.deps.normal"/>
+    <path id="deps.compileonly" refid="common-util.deps.compileonly"/>
+    <path id="deps.testonly" refid="common-util.deps.testonly"/>
+    <path id="deps.runtimeonly" refid="common-util.deps.runtimeonly"/>
+    <path id="deps.webapp.libdir" refid="common-util.deps.webapp.libdir"/>
+  </target>
+
+</project>

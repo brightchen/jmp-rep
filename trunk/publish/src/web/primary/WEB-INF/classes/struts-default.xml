@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<!-- 
+    <package name="publish-default" namespace="/" extends="struts-default">
+    
+    	<result-types>
+            <result-type name="chain" class="com.opensymphony.xwork2.ActionChainResult"/>
+            <result-type name="dispatcher" class="org.apache.struts2.dispatcher.ServletDispatcherResult" default="true"/>
+            <result-type name="freemarker" class="org.apache.struts2.views.freemarker.FreemarkerResult"/>
+            <result-type name="httpheader" class="org.apache.struts2.dispatcher.HttpHeaderResult"/>
+            <result-type name="redirect" class="org.apache.struts2.dispatcher.ServletRedirectResult"/>
+            <result-type name="redirect-action" class="org.apache.struts2.dispatcher.ServletActionRedirectResult"/>
+            <result-type name="stream" class="org.apache.struts2.dispatcher.StreamResult"/>
+            <result-type name="velocity" class="org.apache.struts2.dispatcher.VelocityResult"/>
+            <result-type name="xslt" class="org.apache.struts2.views.xslt.XSLTResult"/>
+            <result-type name="plaintext" class="org.apache.struts2.dispatcher.PlainTextResult" />
+            <result-type name="jasper" class="org.apache.struts2.views.jasperreports.JasperReportsResult"/>
+            <result-type name="viewReport" class="cg.iseepublish.service.report.ReportResult"/>
+        </result-types>
+    			
+		<interceptors>
+		
+			<interceptor name="authentication"
+                         class="cg.iseepublish.web.interceptor.AuthenticationInterceptor"/>
+                         
+			<interceptor-stack name="defaultStack">
+                <interceptor-ref name="exception"/>
+                <interceptor-ref name="alias"/>
+                <interceptor-ref name="servlet-config"/>
+                <interceptor-ref name="prepare"/>
+                <interceptor-ref name="i18n"/>
+                <interceptor-ref name="chain"/>
+                <interceptor-ref name="debugging"/>
+                <interceptor-ref name="scoped-model-driven"/>
+                <interceptor-ref name="model-driven"/>
+                <interceptor-ref name="fileUpload"/>
+                <interceptor-ref name="checkbox"/>
+                <interceptor-ref name="static-params"/>
+                <interceptor-ref name="params">
+                	<param name="excludeParams">dojo\..*</param>
+                </interceptor-ref>
+                <interceptor-ref name="conversionError" />
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">input,back,cancel,browse,execute,delete,list,edit,profile</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+            </interceptor-stack>            
+                        
+            <interceptor-stack name="guest" >
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+            
+            <interceptor-stack name="user" >
+                <interceptor-ref name="authentication" />
+            	<interceptor-ref name="defaultStack" />
+            </interceptor-stack>
+            
+            <interceptor-stack name="guest-submit" >
+                <interceptor-ref name="token-session" />
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+            
+            <interceptor-stack name="user-submit" >
+                <interceptor-ref name="token-session" />
+                <interceptor-ref name="user" />
+            </interceptor-stack>          
+            
+        </interceptors>
+        
+        <default-interceptor-ref name="user"/>
+        
+        <global-results>
+            <result name="error">/common/error.jsp</result>
+            <result name="invalid.token">/common/error.jsp</result>
+            <result name="login" type="redirect-action">Login_input</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping result="error" exception="java.lang.Throwable"/>
+        </global-exception-mappings>
+
+    </package>
+-->
+</struts>

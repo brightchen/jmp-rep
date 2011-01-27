@@ -1,0 +1,65 @@
+DAVISOR OFFISOR LICENSE FILE (do not edit)
+
+license.type=trial
+license.expires=24-APR-2016
+license.number=
+licensee.name=
+product.name=Offisor
+product.version=4.2
+DOC->XMSW=true
+DOC->PNG=true
+RTF->XMSW=true
+PPT->XMSP=true
+PPT->PNG=true
+
+LICENSE AGREEMENT for Davisor Offisor
+
+This license agreement is a legal agreement between you (either an
+individual or a single entity) and Davisor Ltd. for the Davisor
+Offisor software product (SOFTWARE). By installing or using the
+SOFTWARE, you agree to be bound by the terms of this license.
+
+If you do not agree to the terms of this license, do not install or
+use the SOFTWARE.
+
+LICENSE
+
+Davisor Ltd. grants you a non-exclusive and non-transferable license
+to use the SOFTWARE on one single computer with one single CPU.
+
+COPYRIGHT
+
+The SOFTWARE is protected by copyright laws and international
+copyright treaties, as well as other intellectual property laws and
+treaties. The SOFTWARE is licensed, not sold. You may not reverse
+engineer, decompile, disassemble, or translate the SOFTWARE.
+
+This product includes software developed by the Apache Software
+Foundation (http://www.apache.org/). Copyright (C) 2000 The Apache
+Software Foundation.  All rights reserved.
+
+LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+DAVISOR LTD. OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL,
+INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT
+LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS
+INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY
+LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE OR
+THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES, EVEN IF
+DAVISOR LTD.  HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+HIGH RISK ACTIVITIES
+
+The SOFTWARE is not fault-tolerant and is not designed, manufactured
+or intended for use or resale as on-line control equipment in
+hazardous environments requiring fail-safe performance, such as in the
+operation of nuclear facilities, aircraft navigation or communication
+systems, air traffic control, direct life support machines, or weapons
+systems, in which the failure of the Software could lead directly to
+death, personal injury, or severe physical or environmental damage
+("High Risk Activities"). Davisor Ltd. and its suppliers specifically
+disclaim any express or implied warranty of fitness for High Risk
+Activities.
+
+signature=D5C3575C2AE65E24C15DE5D44E24430807D8D2A4

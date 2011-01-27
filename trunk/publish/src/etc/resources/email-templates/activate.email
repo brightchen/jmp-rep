@@ -1,0 +1,17 @@
+<html>
+<body>
+Dear {user.name},<br>
+<br>
+Your account has been {status}.  If you have any questions, please contact your system administrator.<br>
+<br>
+Publisher Name: {publication.name}<br>
+User Name: {user.name}<br>
+<br>
+This is an automated notification system. Please do not reply to this email.<br>
+ <br>
+Thank you.<br>
+ <br>
+Regards,<br>
+iseepublish team<br>
+</body>
+</html>
