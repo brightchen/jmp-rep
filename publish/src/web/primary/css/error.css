@@ -1,0 +1,68 @@
+@CHARSET "ISO-8859-1";
+
+
+/* Body and Global Reset
+----------------------------------------------- */
+body {
+	margin: 0;	
+	background: #FBFCF2;
+	font-family: "Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+}
+
+
+a { color: #9BB010; }
+
+/* Main Wrappers
+----------------------------------------------- */
+#wrapper {
+	border-top: solid 1px #D2D6B8;
+	background: #FBFCF2 url(../images/wrapper.png) repeat-x 0 0;
+	height: 1200px;
+}
+#wrapper .inner {
+	position: relative;
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+	*padding: 50px 0 0 0;
+	_padding: 50px 0 0 0;
+	width: 752px;
+}
+
+/* Heading
+----------------------------------------------- */
+#heading {
+	margin: 0 0 25px 0;
+	float: left;
+	clear: both;
+	width: 752px;
+}
+
+#heading h1 {
+	float: left;
+	_position: absolute;
+	_left: 30px;
+	_top: 30px;
+	margin: 0 25px 0 1px;
+	width: 250px;
+	height: 38px;
+	text-indent: -2000px;
+	background: url(../images/logopub.gif) no-repeat;
+}
+
+
+#error {
+	position: absolute;
+	top:150px;
+	left:0px;
+	border-top: solid 1px #D2D6B8;
+	padding: 0 0 0 50px;
+	background: #FBFCF2 url(../images/strips.png) repeat-x 0 0;
+	height: 680px;
+}
+
+#msg {
+	color: #979893;
+	padding: 100px;
+	font-size: .9em;
+	
+}

@@ -1,0 +1,139 @@
+<project name="super" default="full" xmlns:ivy="antlib:org.apache.ivy.ant" >
+  <taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" />
+	
+  <property file="buildScript/local.properties"/>
+  <property environment="raenv"/>  
+	
+	<!--========== Default Properties ==========-->
+	  <!-- These are defaults, if overriding, define in build file before import -->
+  <property name="TestWildCard"       value="**/*Test.java"/>
+  <property name="TestSuiteWildCard"  value="**/*Tests.java"/>
+  <property name="deploy.base"        value="//raonbuild/build"/>
+  <property name="module.vendor"      value="ReserveAmerica Holdings Inc."/>
+  <property name="ivy.file" value="buildScript/ivy.xml"/>
+  <property name="ivy.build.conf" value="build"/>
+
+  <target name="full" depends="prepare,resolve,compile,package,analyze,publish,cleanup"/>
+  <target name="quick" depends="prepare,resolve,compile,package,publish,cleanup"/>
+  
+	<!--========== prepare ==========-->
+  <target name="prepare" depends="setVersion"/>
+	
+  <target name="setHostname" >
+  	<!-- If on windows, these are already set, when on linux set them appropriately -->
+    <exec executable="hostname" osfamily="unix" failifexecutionfails="false" outputproperty="raenv.COMPUTERNAME"/>
+    <exec executable="whoami" osfamily="unix" failifexecutionfails="false" outputproperty="raenv.USERNAME"/>
+  </target>
+    
+  <target name="setVersion" depends="setHostname">
+    <condition property="ivy.default.ivy.user.dir" value="${raenv.IVY_USER_DIR}">
+      <isset property="raenv.IVY_USER_DIR"/>
+    </condition>
+  	<!-- Hot deployment number should be in the format "-hnumber" exmple: -h01 -->
+    <condition property="hot.deployment.number" value="${raenv.BUILD_HDNUMBER}">
+    	<isset property="raenv.BUILD_HDNUMBER"/>
+    </condition>
+  	<property name="hot.deployment.number" value=""/>
+    <condition property="release" value="${release.name}">
+      <isset property="release.name"/>
+    </condition>
+    <property name="release" value=""/>
+    <property name="app.version" value="${raenv.BUILD_MAJOR}.${raenv.BUILD_MINOR}.${raenv.BUILD_PATCH}.${raenv.BUILD_NUMBER}" />
+    <!-- Display app version for Hudson to grab -->
+    <echo>[AppVersion]${app.version}${hot.deployment.number}</echo>
+    <propertyfile file="${src.tracking.file}" comment="Version Tracking">
+      <entry key="product.name"            value="${module}" />
+      <entry key="product.version"         value="${app.version}" />
+      <entry key="product.version.major"   value="${raenv.BUILD_MAJOR}" />
+      <entry key="product.version.minor"   value="${raenv.BUILD_MINOR}" />
+      <entry key="product.version.patch"   value="${raenv.BUILD_PATCH}" />
+      <entry key="product.version.build"   value="${raenv.BUILD_NUMBER}" />
+      <entry key="product.version.hdbuild" value="${hot.deployment.number}" />
+      <entry key="build.machine"           value="${raenv.COMPUTERNAME}" />
+      <entry key="build.user"           value="${raenv.USERNAME}" />
+      <entry key="build.date" type="date"  value="now" />
+      <entry key="release.name"            value="${release}" />
+    </propertyfile>
+  </target>
+  
+  <!--========== resolve ==========-->
+  <target name="resolve">
+    <ivy:configure  url="http://raonbuild.on.reserveamerica.com:8081/artifactory/repo/settings/ivysettings/4/ivysettings-4.xml"/>
+    <ivy:resolve file="${ivy.file}"/>
+    <ivy:retrieve pattern="${build.lib}/[artifact](-[classifier]).[ext]" conf="${ivy.build.conf}"/>
+  </target>
+	
+  <!--========== compile ==========-->
+  <target name="compile"/>
+	
+  <!--========== package ==========-->
+  <target name="package"/>
+	
+  <!--========== publish ==========-->
+  <target name="publish" depends="ivyPublish,buildPublish"/>
+  
+  <target name="ivyPublish">
+    <ivy:retrieve/>
+    <ivy:publish resolver="${release.type}" pubrevision="${app.version}" status="integration" update="true" overwrite="true">
+      <artifacts pattern="${build.publish.dir}/[artifact](-[classifier]).[ext]" />
+    </ivy:publish>
+  </target>
+  
+  <target name="buildPublish">
+    <!-- mkdir dir="e:\build\ocam\builds\ocam_build_${app.version}"/>
+    <copydir dest="e:\build\ocam\builds\ocam_build_${app.version}" src="${build.dir}"></copydir -->
+  </target>
+    
+  <!--========== analyze ==========-->
+     <!-- TODO move to properties file -->
+  <property name="findbugs.home" value="c:\java\findbugs" />
+  
+  <target name="analyze" depends="findbugs,junit"/>
+  
+  <target name="findbugs" >
+    <findbugs home="${findbugs.home}"
+              output="xml"
+              outputFile="findbugs.xml"
+    	        jvmargs="-Xmx1g"  timeout="90000000">
+      <auxClasspath>
+        <path>
+          <fileset dir="${build.lib}">
+            <include name="**/*.jar"/>
+          </fileset>
+        </path>
+      </auxClasspath>
+
+      <sourcePath path="${src.java}" />
+      <class location="${build.classes}" />
+    </findbugs>
+  </target>
+  
+  <target name="junit" description="Unit Tests">
+    <junit fork="yes" dir="" timeout="1800000" printsummary="yes" haltonfailure="no" >    
+      <classpath>
+        <path>
+          <fileset dir="${build.lib}">
+            <include name="**/*.jar"/>
+          </fileset>
+        </path>
+        <pathelement location="${build.classes}"/>
+      </classpath>
+      <jvmarg value="-server" />
+      <jvmarg value="-Xms64m" />
+      <jvmarg value="-Xmx512M" />
+      <formatter type="xml"/>
+        
+      <batchtest fork="yes" todir="">
+        <fileset dir="${src.java}">
+          <include name="${TestSuiteWildCard}"/>
+          <include name="${TestWildCard}"/>
+        </fileset>
+      </batchtest>
+    </junit>
+      
+  </target>
+
+  <!--========== cleanup ==========-->
+  <target name="cleanup"/>
+  
+</project>

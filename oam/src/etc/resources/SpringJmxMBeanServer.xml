@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+  "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <bean id="exporter" class=
+    "cg.oam.jmx.mbeans.spring.MBeanDescriptorEnabledExporter">
+    <property name="beans">
+      <map>
+        <entry key="Services:name=Engine Configurer"
+          value-ref="configurer" />
+        <entry key="Services:name=Default Device Profile"
+          value-ref="defaultProfileProxy" />
+        <entry key="Services:name=File Repository"
+          value-ref="fileRepository" />
+        <entry key="Services:name=Logging Manager"
+          value-ref="logging" />
+        <entry key="Services:name=Engine Proxy"
+          value-ref="engineInterceptorAdvice" />
+        <entry key="MX4J:name=HttpAdaptor"
+          value-ref="HttpAdaptor" />
+        <entry key="MX4J:name=XSLTProcessor"
+          value-ref="XSLTProcessor" />
+      </map>
+    </property>
+  </bean>
+  
+  <bean id="XSLTProcessor"
+    class="mx4j.tools.adaptor.http.XSLTProcessor">
+    <property name="pathInJar" value="xsl"/>
+  </bean>  
+    
+  <bean id="HttpAdaptor"
+    class="mx4j.tools.adaptor.http.HttpAdaptor">
+    <property name="processor" ref="XSLTProcessor"/>
+    <property name="port" value="9090"/>
+  </bean>
+
+</beans>

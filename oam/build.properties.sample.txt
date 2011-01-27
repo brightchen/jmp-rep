@@ -1,0 +1,19 @@
+# ----------------------------------------------------------------------------- 
+# build.properties.sample.txt #
+#
+# This is an example "build.properties" file, used to customize building the 
+# project in your local environment. Make any changes you need, and rename this 
+# file "build.properties" in the same directory that contains the project 
+#
+# Properties here will take precedence over any properties in a build.properies
+# file located inside your user directory
+#
+# $Header: /cvs/helio/oam/build.properties.sample.txt,v 1.1 2007/05/22 14:43:23 dorelv Exp $
+# -----------------------------------------------------------------------------
+
+# example!
+# these values will override the default values for the 'dev'
+# deployment target. Normally it is ok to leave them commented out,
+# as the default values will be for localhost
+#dev.deployment.host=localhost
+

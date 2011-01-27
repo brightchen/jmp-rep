@@ -1,0 +1,101 @@
+#image
+{
+  left: 0px;
+  top: 0px;
+  overflow: auto;             /* Give us scrollbars if we need them */
+  border: 1px solid #000000; border-style: solid;
+}
+
+div.pages
+{  /* Specifies size, position and scrolling for window content */
+    position: absolute;         /* It's a positioned element */
+    left: 10px;
+    top: 255px;                  /* 18px title+2px border+3px+2px padding */
+    width: 75px;               /* 300px width - 10px of padding */
+    height: 400px;              /* 200px total - 25px titlebar - 10px padding*/
+    padding: 5px;               /* Allow space on all four sides */
+    overflow: auto;             /* Give us scrollbars if we need them */
+    border: 1px solid #333;
+}
+
+.drsElement {
+ position: absolute;
+ border: 1px solid #333;
+}
+
+.drsElementAlt {
+ position: absolute;
+ border: 2px solid #0000ff;
+ background-image: url('images/spacer.gif'); border-style: dotted; color: #0000ff;
+}
+
+
+.drsMoveHandle {
+ height: 20px;
+ background-color: #CCC;
+ border-bottom: 1px solid #666;
+ cursor: move;
+}
+
+.drsMoveHandleAlt {
+ height: 20px;
+ border-bottom: 2px solid #0000ff;
+ cursor: move;
+ background-image: url('images/spacer.gif'); border-style: dotted; color: #0000ff;
+}
+
+.dragresize {
+ position: absolute;
+ width: 5px;
+ height: 5px;
+ font-size: 1px;
+ background: #0000cc;
+ border: 0px solid #0000ff;
+}
+
+.dragresize-tl {
+ top: -8px;
+ left: -8px;
+ cursor: nw-resize;
+}
+.dragresize-tm {
+ top: -8px;
+ left: 50%;
+ margin-left: -4px;
+ cursor: n-resize;
+}
+.dragresize-tr {
+ top: -8px;
+ right: -8px;
+ cursor: ne-resize;
+}
+
+.dragresize-ml {
+ top: 50%;
+ margin-top: -4px;
+ left: -8px;
+ cursor: w-resize;
+}
+.dragresize-mr {
+ top: 50%;
+ margin-top: -4px;
+ right: -8px;
+ cursor: e-resize;
+}
+
+.dragresize-bl {
+ bottom: -8px;
+ left: -8px;
+ cursor: sw-resize;
+}
+.dragresize-bm {
+ bottom: -8px;
+ left: 50%;
+ margin-left: -4px;
+ cursor: s-resize;
+}
+.dragresize-br {
+ bottom: -8px;
+ right: -8px;
+ cursor: se-resize;
+}

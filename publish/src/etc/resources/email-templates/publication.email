@@ -1,0 +1,18 @@
+<html>
+<body>
+Dear {user.name},<br>
+<br>
+Thank you for requesting an account. We have received your request and is being processed. We will send you an email confirmation once your account has been activated.<br>
+	<br>
+Publisher Name: {publication.name}<br>
+Login User Name: {publication.adminuser}<br>
+
+<br>
+Click <a href="{iseepublish_server_link}">here</a> to login to isee publish portal. Once logged in, be sure to change your password.
+<br><br>
+This is an automated notification system. Please do not reply to this email.<br>
+ <br>
+Regards,<br>
+iseepublish team<br>
+</body>
+</html>

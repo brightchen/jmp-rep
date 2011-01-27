@@ -1,0 +1,18 @@
+-config C:\dev\tomcat-6.0.16\conf\publish-runable.xml start
+
+
+-Xmx256M -XX:MaxPermSize=64m
+-Djava.endorsed.dirs="C:\dev\tomcat-6.0.16\endorsed"
+-Dcatalina.base="C:\dev\tomcat-6.0.16"
+-Dcatalina.home="C:\dev\tomcat-6.0.16" 
+-Djava.io.tmpdir="C:\dev\tomcat-6.0.16\temp"
+-Ddefault.config.file="C:\wss\publish-runable\publish\config\default.config"
+-Dftp.delay.start.milliseconds=10000
+
+runtime additional classpathes: derby, tomcat-bin; tomcat-lib
+
+
+default.config
+ftp.delay.start.milliseconds=1000
+ftp.period.milliseconds=600000
+log4j.work.properties.location=C:\wss\publish\iseepublish\config

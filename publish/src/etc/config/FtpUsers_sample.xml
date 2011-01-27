@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ftpUsers>
+	<ftpUser name="tester01" password="tester01" publication="PublicationName" style="S01" />
+	<ftpUser name="tester02" password="tester02" publication="PublicationName" style="S02" />
+	<ftpUser name="tester03" password="tester03" publication="PublicationName" style="S03" />
+</ftpUsers>

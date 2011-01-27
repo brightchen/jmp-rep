@@ -1,0 +1,27 @@
+<html>
+<body>
+<p>Dear {user.name},</p>
+
+<p>The status of the following document has been changed. Please take appropriate actions as deemed necessary.</p>
+<p>	
+	Publication Name: {publication.name}<br/>
+	Document Source: {document.src}<br/>
+	Document Name: {document.name}<br/>
+	Document Status: {document.status} <br/>
+	{document.status.verb} By: {by.username}<br/>
+	
+</p>
+
+<p>This is the current status as of {document.datetime}.</p>
+<p>Click <a href="{iseepublish_server_link}">here</a> to login to isee publish portal.</p>
+
+<p>This is an automated notification system. Please do not reply to this email.</p>
+ 
+<p>Thank you.</p>
+ 
+<p>Regards,<br/>
+isee publish team</p>
+
+
+</body>
+</html>

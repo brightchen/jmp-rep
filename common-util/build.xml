@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="common-util">
+    <property environment="env"/>
+    <property name="JRE_LIB" value="../../../../../../java/jre6/lib/rt.jar"/>
+    <property name="STATIC_REPO" value="../../../../../../java/javaLibs"/>
+    <property name="adaptation.location" value="../adaptation"/>
+    <property name="authoring.location" value="../authoring"/>
+    <property name="document.location" value="../document"/>
+    <property name="frontend.location" value="../frontend"/>
+    <property name="iseepublish.location" value="../iseepublish"/>
+    <property name="oam.location" value="../oam"/>
+    <property name="pdf-extractor.location" value="../pdf-extractor"/>
+    <property name="repository.location" value="../repository"/>
+    <property name="streaming.location" value="../streaming"/>
+    <property name="ECLIPSE_HOME" value="../../../../../../devTools/eclipse_j2ee"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="common-util.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="${JRE_LIB}"/>
+        <pathelement location="${STATIC_REPO}/log4j-1.2.15.jar"/>
+        <pathelement location="${STATIC_REPO}/mailapi.jar"/>
+        <pathelement location="lib"/>
+        <pathelement location="${STATIC_REPO}/junit-4.5.jar"/>
+        <pathelement location="${STATIC_REPO}/servlet.jar"/>
+        <pathelement location="${STATIC_REPO}/spring-core.jar"/>
+        <pathelement location="${STATIC_REPO}/xercesImpl.jar"/>
+        <pathelement location="${STATIC_REPO}/spring-beans.jar"/>
+        <pathelement location="${STATIC_REPO}/spring-web.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/java/main">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.CVS"/>
+                <exclude name="CVS/"/>
+                <exclude name="**/**/.CVS"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/etc/addtounitcp">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/java/test">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.CVS"/>
+                <exclude name="CVS/"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" source="${source}" target="${target}">
+            <src path="src/java/main"/>
+            <exclude name="**/*.CVS"/>
+            <exclude name="CVS/"/>
+            <exclude name="**/**/.CVS"/>
+            <classpath refid="common-util.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" source="${source}" target="${target}">
+            <src path="src/etc/addtounitcp"/>
+            <classpath refid="common-util.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" source="${source}" target="${target}">
+            <src path="src/java/test"/>
+            <exclude name="**/*.CVS"/>
+            <exclude name="CVS/"/>
+            <classpath refid="common-util.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="${adaptation.location}/build.xml" dir="${adaptation.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${adaptation.location}/build.xml" dir="${adaptation.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="${authoring.location}/build.xml" dir="${authoring.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${authoring.location}/build.xml" dir="${authoring.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="${document.location}/build.xml" dir="${document.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${document.location}/build.xml" dir="${document.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="${frontend.location}/build.xml" dir="${frontend.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${frontend.location}/build.xml" dir="${frontend.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="${iseepublish.location}/build.xml" dir="${iseepublish.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${iseepublish.location}/build.xml" dir="${iseepublish.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="${oam.location}/build.xml" dir="${oam.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${oam.location}/build.xml" dir="${oam.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="${pdf-extractor.location}/build.xml" dir="${pdf-extractor.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${pdf-extractor.location}/build.xml" dir="${pdf-extractor.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="${repository.location}/build.xml" dir="${repository.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${repository.location}/build.xml" dir="${repository.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="${streaming.location}/build.xml" dir="${streaming.location}" inheritAll="false" target="clean"/>
+        <ant antfile="${streaming.location}/build.xml" dir="${streaming.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    
+    <target description="dist the project"  depends="build" name="dist-project">
+    		<jar destfile="target/common-util.jar">
+						<fileset dir="target/classes"/>
+				</jar>
+    </target>    
+    
+    <target depends="dist-project" name="dist"/>     
+</project>

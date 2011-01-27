@@ -1,0 +1,817 @@
+@CHARSET "ISO-8859-1";
+
+
+/* Body and Global Reset
+----------------------------------------------- */
+body {
+	margin: 0;	
+	background: #FBFCF2;
+	font-family: "Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+}
+* {
+	top:0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* Account
+----------------------------------------------- */
+#account { background: #fff; }
+
+#account #heading h1 {
+	_top: 5px;
+	left: 5px;
+	text-indent: -2000px;
+	background: url(../images/logopubsmall.gif) no-repeat;
+}
+#account .inner {
+	position: relative;
+	*top: 5px;
+	margin: 0 auto;
+	padding: 8px 0 8px 0;
+	width: 752px;
+}
+#account p {
+	*position: relative;
+	*top: -25px;
+	margin: 0 0 0 1px;
+	font-size: .6em;
+	color: #444;
+}
+#account h4 {
+	*position: absolute;
+	*top: -50px;
+	*right: 0;
+	margin: 0 0 0 1px;
+	font-size: .6em;
+	color: #444;
+}
+#account #login {
+	position: absolute;
+	top: 25px;
+	*top: -25px;
+	right: 0;
+	height: 23px;
+	z-index: 100;
+	padding: 0 19px 0 0;
+	background: url(../images/login_right.png) no-repeat 100% 0;
+}
+#account #login p {
+	top: 0px;
+	margin: 0;
+	padding: 0 1px 0 19px;
+	height: 23px;
+	float: right;
+	width: auto;
+	background: url(../images/login_left.png) no-repeat 0 0;
+}
+#account #login p span { color: #aaa; }
+
+#account #forget {
+	position: absolute;
+	*top: 5px;
+	*right: 20px;
+	right: 2px;
+	top: 48px;
+	height: 23px;
+	z-index: 100;
+	font-size: .6em;
+	padding: 0 19px 0 0;
+}
+#account #first {
+	position: absolute;
+	top: 25px;
+	*top: -25px;
+	right: 85px;
+	height: 23px;
+	z-index: 100;
+	padding: 0 19px 0 0;
+	background: url(../images/login_right.png) no-repeat 100% 0;
+}
+#account #first p {
+	top: 0px;
+	margin: 0;
+	padding: 0 1px 0 19px;
+	height: 23px;
+	float: right;
+	width: auto;
+	background: url(../images/login_left.png) no-repeat 0 0;
+}
+#account #first p span { color: #aaa; }
+
+#account #document {
+	position: absolute;
+	top: 25px;
+	*top: -25px;
+	right: 215px;
+	height: 23px;
+	z-index: 100;
+	padding: 0 19px 0 0;
+	background: url(../images/login_right.png) no-repeat 100% 0;
+}
+#account #document p {
+	top: 0px;
+	margin: 0;
+	padding: 0 1px 0 19px;
+	height: 23px;
+	float: right;
+	width: auto;
+	background: url(../images/login_left.png) no-repeat 0 0;
+}
+#account #document p span { color: #aaa; }
+
+/* Main Wrappers
+----------------------------------------------- */
+#wrapper {
+	*position: relative;
+	*top: -15px;
+	border-top: solid 1px #D2D6B8;
+	background: #FBFCF2 url(../images/wrapper.png) repeat-x 0 0;
+	height: 1200px;
+}
+#wrapper .inner {
+	position: relative;
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+	*padding: 50px 0 0 0;
+	_padding: 50px 0 0 0;
+	width: 752px;
+}
+
+/* Heading
+----------------------------------------------- */
+#heading {
+	margin: 0 0 25px 0;
+	float: left;
+	clear: both;
+	width: 752px;
+}
+
+#heading h1 {
+	float: left;
+	_position: absolute;
+	_left: 30px;
+	_top: 30px;
+	margin: 0 25px 0 1px;
+	width: 250px;
+	height: 38px;
+	text-indent: -2000px;
+	background: url(../images/logopub.gif) no-repeat;
+}
+
+/* Footer
+----------------------------------------------- */
+#footer {
+	width: 752px;
+	float: left;
+	clear: both;
+	margin: 0;
+	_margin-top:800px;	
+	*margin-top:680px;
+}
+#footer p {
+	float: left;
+	width: 252px;
+	padding: 2px 0 30px 0;
+	text-align: center;
+	font-size: .7em;
+	color: #979893;
+}
+#footer p a { color: #979893; }
+#footer p a:hover { color: #1a1a1a; }
+#footer p.left {
+	padding: 2px 0 30px 1px;
+	width: 249px;
+	text-align: left;
+}
+
+#footer p.right {
+	padding: 0 1px 10px 0;
+	width: 249px;
+	text-align: right;
+}
+
+#footer p.right a {
+	text-align: right;
+	height: 18px;
+	width: 110px;
+	padding: 2px 0 0 0;
+	text-decoration: none;	
+}
+#footer p.right a:hover { background-position: 100% -24px; }
+#footer p.right a span { display: none; }
+
+a {
+	padding-bottom: 1px;
+	color: #9BB010;
+	text-decoration: none;
+	border-bottom: dotted 1px #ccc;
+}
+a:hover {
+	color: #111;
+	border-bottom: solid 1px #ccc;
+}
+
+/* Dashboard Layout Positioning
+----------------------------------------------- */
+#wrapper #standard {
+	width: 830px;
+	_width: 800px;
+	float: right;
+	margin: 0 0 10px 0;
+	background: url(../images/bk_Flipped_long_ie.jpg) no-repeat;
+}
+
+#wrapper #auth {
+	width: 830px;
+	_width: 800px;
+	float: right;
+	margin: 0 0 10px 0;
+	height: 800px;
+	background: url(../images/bkg.jpg) repeat-y;
+}
+
+.has_side { 
+	height: 450px;
+	_height:400px;
+	width: 830px;
+	background: url(../images/bk_Flipped.jpg) no-repeat;
+}
+
+/* a special one for long page
+----------------------------------------------- */
+.has_side_long { 
+	height: 600px;
+	*height: 755px;
+	_height: 730px;
+	width: 830px;
+	*width:830px;
+	_width: 800px;
+	background: url(../images/bk_Flipped_long.jpg) no-repeat;
+	*background: url(../images/bk_Flipped_long_ie.jpg) no-repeat;
+	_background: url(../images/bk_Flipped_long_ie.jpg) no-repeat; 
+}
+
+.has_side_reg { 
+	height: 500px;
+	*height: 670px;
+	_height: 680px;
+	width: 830px;
+	*width:830px;
+	_width: 800px;
+	background: url(../images/bk_Flipped_long.jpg) no-repeat;
+	*background: url(../images/bk_Flipped_long_ie.jpg) no-repeat;
+	_background: url(../images/bk_Flipped_long_ie.jpg) no-repeat; 
+}
+ #main {
+	float: right;
+	position: relative;
+	width: 540px;
+	margin: 20px 20px 0 0 ;
+	_margin-right: 5px;
+}
+#auth {
+	float: right;
+	position: relative;
+	width: 540px;
+	margin: 5px 5px 0 0 ;
+	_margin-right: 5px;
+}
+#side {
+	float: right;
+	margin: 30px 0 0 20px;
+	position: relative;
+	left: -30px;
+	_left: -10px;
+	_top: 5px;
+	padding: 20px;
+	_padding: 15px;
+	*width: 200px;
+	width: 174px;
+}
+
+/* All action Message/Error style outside the form */
+.actionMessage {
+	font-family: "Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+	font-size: .7em;
+    	margin: 0 0 2px 0;
+	padding: 2px 0 0 0;
+    	color: #00324D;
+}
+.errorMessage{
+	font-size: .7em;
+	margin: 0 0 2px 0;
+	padding: 2px 0 0 0;
+	color: #FF0000;
+}
+/* Content: Main
+----------------------------------------------- */
+#main h1 { 
+	margin: 0 0 20px 0; 
+	font-weight: normal;
+	font-size: 1.2em;
+	color: #00324D;}
+
+#main h3 {
+	margin: 0 0 10px 0;
+	font-weight: normal;
+	font-size: .9em;
+	color: #00324D;
+}
+#main p {
+	margin: 0 0 20px 0;
+	font-size: 15px;
+	line-height: 2em;
+	font-size: .8em;
+	color: #28373F;
+}
+
+
+
+/* Content: Main: Forms
+----------------------------------------------- */
+
+#main fieldset {
+	float: left;
+	clear: both;
+	width: 514px;
+	min-height: 150px;
+	margin: 0 0 20px 0;
+	border: solid 1px #9BC9DF;
+	padding: 15px 15px 7px 15px;
+	*margin: 0 0 15px 0;
+	*padding-bottom: 0;
+}
+
+#main fieldset legend {
+	margin: 0 0 0 -5px;
+	padding: 0 5px 0 5px;
+	color: #00324D;
+	font-size: .7em;
+	*margin: 0 0 12px -12px;
+}
+
+
+
+#main fieldset p {
+	font-size: .7em;
+	line-height: 1.5em;
+}
+fieldset dl { width: 514px; }
+#main fieldset dl dt {
+	position: relative;
+	float: left;
+	clear: right;
+	width: 150px;
+	margin: 0 0 8px 0;
+	padding: 0 15px 0 0;
+	text-align: right;
+	*clear: both;
+	*float: none;	
+	height: 30px;
+	
+}
+
+#wrapper #standard #main fieldset dl dd {
+        float: right;
+        clear: both;
+        width: 339px;
+        margin: 0 0 8px 0;
+        padding: 2px 0 0 0;
+        *clear: both;
+        margin-top: -38px;
+}
+
+#main fieldset dl dt label {
+	font-size: .7em;
+	color: #28373F;
+}
+#main fieldset dl dt input {
+	font-size: .7em;
+	color: #28373F;
+}
+fieldset dl dd span.errorMessage{ 
+	width: 200px; 
+	_width: 250px; 
+  	float: center;
+  	font-size: .7em;
+        clear: both;
+        color: #ff0000;
+        padding: 50px 0 0 0;
+        _padding: 35px 0 0 0;
+ 	font-weight: bold;
+}
+
+fieldset dl dd input { width: 200px; }
+fieldset dl dd label {
+	font-size: .7em;
+	color: #28373F;
+}
+fieldset dl dd input.radio {
+	position: ralative;
+	margin-left: -90px;
+}
+
+fieldset dl dd label.radio{
+	position: ralative;
+	margin-left: -80px;
+	font-size: .7em;
+	color: #28373F;
+}
+
+fieldset dl dd label input {
+	margin: 0 0 0 15px;
+	padding: 0 20px 0 0;
+	width: auto;
+	*height:25px;
+	*clear:both;
+	*padding-top: 25px;
+	*margin-top: 30px;
+	height:25px;
+	clear:both;
+	padding-top: 25px;
+	margin-top: 30px;
+	
+}
+
+fieldset dl dd .auto { width: auto; }
+fieldset dl dt.error label { color: #AF3816; }
+fieldset dl dd.error input { background-color: #F8E4DF; }
+
+fieldset dd.oneline {
+	clear: both;
+	float: left;
+	clear: both;
+	margin: 30px 0 -20px 0;
+	*margin: 0 0 -50px 0;
+	padding: 25px 15px 7px 15px;
+}
+
+fieldset dd.oneline input.sbtn{
+  	position: relative;
+ 	color:#050;
+  	font-family: "Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+  	font-size: .7em;
+  	width: 60px;
+   	clear: both;
+	*margin-top: 35px;
+	_margin-top: 20px;
+}
+
+#main fieldset table.check{
+	color: #28373F;
+	padding: 10px 0 0 0;
+	margin: 15px 0 15px 0;
+	clear:both;
+}
+
+table.profile{
+	position: relative;
+	left: -17px;
+	color: #28373F;
+	clear:both;
+}
+/* select menu inside the fieldset 
+#main fieldset table tr td label {
+	font-size: .7em;
+	color: #28373F;
+	*position: relative;
+	*bottom: -20px;
+	*padding: 20px 0 30px 0;
+	*margin: 20px 0 8px 0;
+	*clear:both;
+}
+ table tr td select .bttn {
+	font-size: .7em;
+	width:100px;
+	color: #28373F;
+	*position: relative;
+	*bottom: -10px;
+	*height: 80px;
+	*padding: 30px 0 30px 0;
+	*margin: 30px 0 8px 0;
+	*clear:both;
+}
+
+select.select {
+	font-size: .7em;
+	width: 180px;
+	color: #28373F;
+	*position: relative;
+	*bottom: -10px;
+	*height: 80px;
+	*padding: 30px 0 30px 0;
+	*margin: 30px 0 8px 0;
+	*clear:both;
+}
+
+.select option {
+width: 150px;
+}
+/* Content: Main: s:optiontransferselect Forms
+----------------------------------------------- */
+
+fieldset .btn{
+   position: relative;
+   color:#050;
+   font-family: "Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+   font-size: .7em;
+   width: 100px;
+   *clear: both;
+   *margin-top: 20px;
+   margin-top: 20px;
+}
+   
+fieldset .fbtn{
+   position: relative;
+   color:#050;
+   font-family: "Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+   font-size: .7em;
+   width: 120px;
+   	*clear: both;
+	*margin-top: 35px;
+	margin-top: 35px;
+   }
+fieldset .profilebtn{
+   position: relative;
+   color:#050;
+   font-family: "Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+   font-size: .7em;
+   width: 120px;
+   	*clear: both;
+	
+   }
+#main .browse{
+   position: relative;
+   color:#050;
+   font-family: "Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+   font-size: .7em;
+   width: 100px;
+   }
+#main fieldset .signup{ 
+	width: 86px;
+	hiehgt: 40px;
+	background: url(../images/joinNowBtnB.gif) ;
+}
+
+
+fieldset dl dt.error label { color: #AF3816; }
+fieldset dl dd.error input { background-color: #F8E4DF; }
+
+/* Content: Main: Alerts
+----------------------------------------------- */
+.alert { margin: 0 0 20px 0; }
+.alert .inner {
+	width: 490px;
+	padding: 16px 15px 2px 41px;
+	background: url(../images/signup/alert_top.png) no-repeat;
+}
+
+.alert .bottom {
+	height: 15px;
+	background: url(../images/signup/alert_bottom.png) no-repeat 0 100%;
+}
+.alert p {
+	margin: 0;
+	padding: 0;
+	font-size: .8em;
+	line-height: 1em;
+	color: #AF3816;
+}
+.alert li {
+	margin: 0 0 0 30px;
+	list-style: disc;
+	font-size: .8em;
+	line-height: 1.2em;
+	color: #AF3816;	
+}
+
+/* Content: Side
+----------------------------------------------- */
+#side h3 {
+	margin: 0 0 6px 0;
+	font-weight: normal;
+	font-size: .8em;
+	color: #00324D;
+}
+#side p {
+	font-size: .7em;
+	line-height: 1.5em;
+	color: #28373F;
+}
+
+#login_layout h1 {
+	margin: 0 0 15px 0;
+	font-weight: normal;
+	font-size: 1.1em;
+	color: #00324D;
+}
+
+#login_layout p {
+	margin: 0 0 15px 0;
+	_position: absolute;
+	_top:80px;
+	_left:5px;
+	*position: absolute;
+	*top:100px;
+	*left:5px;
+	*margin_bottom: 30px;
+	font-weight: normal;
+	font-size: .8em;
+	color: #00324D;
+}
+
+#login_layout #columns {
+	_position: absolute;
+	_top: 100px;
+	_left: 5px;
+	*position: absolute;
+	*top: 150px;
+	*left: 5px;
+	float: left;
+	clear: both;
+	margin: 0 0 25px 0;
+	width: 830px;
+	
+}
+#login_layout #columns .login {
+	position: relative;
+	_position: absolute;
+	_left: 3px;
+	_top: 0px;
+	_width: 250px;
+	float: left;
+	margin: 0 5px 0 0;
+	width: 310px;
+	
+	height:195px;
+	*height:195px;
+	_height:170px;
+	background: url(../images/box_under.png) repeat-x;
+}
+
+#login_layout #columns .login fieldset {
+	margin: 0 0 15px 0;
+	padding: 12px;
+	border: solid 1px #e8e8e8;
+	_height:165px;
+	_width: 250px;
+	*height:170px;
+	*width: 285px;
+	
+}
+#login_layout #columns .login fieldset legend { display: none; }
+
+#login_layout #columns .login fieldset label {
+	display: block;
+	margin: 0 0 2px 0;
+	font-size: .7em;
+	color: #797979;
+}
+#login_layout #columns .login fieldset label .required{
+	display: block;
+	margin: 0 0 2px 0;
+	font-size: .7em;
+	font-weight: bold;
+	color: #797979;
+}
+#login_layout #columns .login fieldset input {
+	display: block;
+	margin: 0 0 14px 0;
+	width: 180px;
+}
+#login_layout #columns .login fieldset p {
+	font-size: .6em;
+	color: #B3B3B3;
+	_position: absolute;
+	_left: 13px;
+	_top: 112px;
+	*position: absolute;
+	*left: 13px;
+	*top: 112px;
+}
+
+#login_layout #columns .login fieldset p input{
+	font-size: .6em;
+	color: #B3B3B3;
+	width: 84px;
+}
+#login_layout #columns .login fieldset p#login_button {
+	font-size: .6em;
+	color: #B3B3B3;
+	
+}
+#login_layout #columns .login fieldset p#login_button input {
+	display: inline;
+	position: relative;
+	top: -3px;
+	vertical-align: middle;
+	margin: 0 3px 0 0;
+	height: 8px;
+}
+#login_layout #columns .login fieldset p#login_button a {
+	margin: 0 0 0 3px;
+	color: #666;
+	font-size: .6em;
+}
+
+#login_layout #columns .signup_promo {
+	float: right;
+	margin: 0 0 0 5px;
+	width: 486px;
+	padding: 12px;
+	border-top: solid 1px #d9d9d9;
+	background: url(../images/signup_shade.gif) repeat-x;
+}
+
+#login_layout #columns .signup_promo h3 {
+	margin: 0 0 8px 0;
+	font-weight: normal;
+	font-size: .9em;
+	color: #00324D;
+}
+#login_layout #columns .signup_promo p {
+	margin: 0 0 8px 0;
+	_position: absolute;
+	_top:150px;
+	_left:330px;
+	_width: 500px;
+	*position: absolute;
+	*top:50px;
+	*left:330px;
+	*width: 500px;
+	font-size: .7em;
+	line-height: 1.3em;
+	color: #444;
+}
+
+#login_layout #columns .signup_promo ul { margin: 0 0 12px 25px; }
+#login_layout #columns .signup_promo ul li {
+	margin: 0 0 3px 0;
+	list-style: disc;
+	font-size: .7em;
+	color: #444;
+}
+
+#login_layout #columns .signup_promo p img { border: none; }
+
+#login_layout #columns .signup_promo #newsletter_signup label {
+	display: block;
+	margin: 0 0 2px 0;
+	font-size: .7em;
+	color: #797979;
+}
+#login_layout #columns .signup_promo #newsletter_signup input {
+	display: block;
+	margin: 0 0 14px 0;
+	width: 220px;
+}
+#login_layout #columns .signup_promo #newsletter_signup input.button { width: auto; }
+
+#login_layout .error_box {
+	margin: 0 0 15px 0;
+	padding: 12px 12px 8px 12px;
+	background: #AF3816;
+}
+#login_layout .error_box p {
+	margin: 0 0 4px 0;
+	font-size: .7em;
+	color: #fff;
+	font-weight: bold;
+}
+#login_layout .error_box li {
+	margin: 0 0 4px 30px;
+	font-size: .7em;
+	color: #fff;
+}
+
+#login_layout .notice_box {
+	margin: 0 0 15px 0;
+	padding: 12px 12px 8px 12px;
+	background: #C9D577;
+}
+#login_layout .notice_box p {
+	margin: 0 0 4px 0;
+	font-size: .7em;
+	color: #49501A;
+	font-weight: bold;
+}
+#login_layout .notice_box li {
+	margin: 0 0 4px 30px;
+	font-size: .7em;
+	color: #49501A;
+}
+#login_layout .notice_box li a { color: #49501A; }
+
+
+
+#wrapper .inner #ext {
+	margin: -500px;
+	*margin: -200px;
+	_margin: -280px;
+}
+#wrapper .inner #long {
+	margin: -50px;
+	*margin: -530px;
+	_margin: -280px;
+}

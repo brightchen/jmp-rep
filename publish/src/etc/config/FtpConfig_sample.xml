@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- a simple example of Ftp configuration, it's based on the FtpUsers.xml and extended
+  1. There maybe have multi ftp servers
+  2. The file name includes all the information required for parsing, this file only include 
+     the information related to ftp
+-->   
+
+<ftpConnectionInfos>
+	<ftpConnectionInfo server="server1" user="user1" password="password1" email="tester1@iseemedia.com"/>
+	<ftpConnectionInfo server="server2" user="user2" password="password2" email="tester2@iseemedia.com"/>
+</ftpConnectionInfos>
