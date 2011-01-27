@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ivy-module version="1.0" xmlns:e="http://ant.apache.org/ivy/extra" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="cg" module="common-util" status="integration" revision="3.00.00."></info>
+  <configurations>
+  	<conf name="dev" description="Includes the libraries/sources/docs required to build/test/debug this module."/>
+  </configurations>
+  <publications>
+  </publications>
+  
+  <dependencies>
+    <dependency org="log4j" name="log4j" rev="1.2.14"/>
+    <dependency org="junit" name="junit" rev="4.8.1"/>
+    <dependency org="javax.servlet" name="jsp-api" rev="2.0"/>
+ 
+    <dependency org="commons-email" name="commons-email" rev="1.1"/>
+    <dependency org="xerces" name="xerces" rev="2.4.0"/>
+
+  </dependencies>
+</ivy-module>
