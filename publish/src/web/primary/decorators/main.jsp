@@ -9,7 +9,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
   <head>
-  	<title><decorator:title default="iseepublish" /></title>
+  	<title><decorator:title default="usermodule" /></title>
   	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/main.css" />
   	<meta http-equiv="content-type" content="text/xhtml; charset=UTF-8" />
   	<meta http-equiv="imagetoolbar" content="no" />
