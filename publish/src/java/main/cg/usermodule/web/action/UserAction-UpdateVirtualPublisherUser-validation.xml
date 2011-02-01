@@ -1,0 +1,48 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+    "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	
+
+       <field name="publisherUser.firstname">
+	<field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required"/>
+        </field-validator>
+	<field-validator type="regex">
+	    <param name="expression">^\D*$</param>
+	    <message key="errors.alphabets.only" /> 
+	</field-validator> 
+    </field>
+    <field name="publisherUser.lastname">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required"/>
+        </field-validator>
+    	<field-validator type="regex">
+      	   <param name="expression">^\D*$</param>
+	   <message key="errors.alphabets.only" /> 
+      	</field-validator>
+    </field>
+    
+    <field name="publisherUser.email">
+     	<field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required"/>
+        </field-validator>
+  	<field-validator type="email">
+     	     <message key="email.invalid"/>
+  	</field-validator>
+    </field>
+    
+    <validator type="expression">
+        <param name="expression">publisherUser.password eq password2</param>
+        <message key="errors.password.mismatch"/>
+    </validator>
+	<field name="publisherUser.phoneNumber">
+        <field-validator type="regex">
+			<param name="expression">^\d*$</param>
+			 <message key="phone.invalid"/>
+		</field-validator>  
+    </field>
+
+</validators>
